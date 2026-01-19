@@ -803,7 +803,7 @@ nav {
 
 /* Ken Burns effect - subtle */
 .gallery-item.in-view img {
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 .gallery-item:nth-child(1) {
