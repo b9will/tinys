@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny's General Store - Coffee & Goodies | Toronto</title>
+    <meta name="description" content="A neighbourhood café and curiosity shop in Toronto. Good coffee, thoughtful goods, and the kind of warmth that makes you stay a while.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="nav-brand">
+            <img src="images/logo.svg" alt="Tiny's General Store" class="logo-svg">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#offerings">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#visit">Visit</a></li>
+            <li><a href="https://maps.app.goo.gl/GhEUQp2WhPD2Xj6g6" target="_blank" class="nav-cta">Directions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Dynamic Open/Closed Sign -->
+            <div class="status-sign" id="statusSign">
+                <div class="status-indicator" id="statusIndicator"></div>
+                <div class="status-text" id="statusText">
+                    <span>Open</span> · Until 4:30pm
+                </div>
+            </div>
+
+            <div class="hero-label">Coffee & Goodies</div>
+            <h1 class="hero-title">Tiny's<br><em>General Store</em></h1>
+            <p class="hero-subtitle">A neighbourhood café and curiosity shop. Good coffee, thoughtful goods, and the kind of warmth that makes you stay a while.</p>
+            <div class="hero-actions">
+                <a href="#visit" class="btn btn-primary">Plan Your Visit</a>
+                <a href="#offerings" class="btn btn-secondary">Explore</a>
+            </div>
+        </div>
+        <div class="hero-image" id="heroImage">
+            <img src="images/hero-seating.webp" alt="Tiny's café interior with seating" id="heroImg">
+        </div>
+    </section>
+
+    <!-- Info Strip -->
+    <div class="info-strip">
+        <div class="info-strip-content">
+            <a href="https://maps.app.goo.gl/GhEUQp2WhPD2Xj6g6" target="_blank" class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                80 Barton Ave, Toronto
+            </a>
+            
+            <a href="tel:416-516-7723" class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                (416) 516-7723
+            </a>
+
+            <a href="https://www.google.com/search?q=Tiny's+Toronto" target="_blank" class="google-badge">
+                <svg class="g-logo" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                <div class="google-badge-content">
+                    <span class="google-badge-rating">4.8</span>
+                    <div class="google-badge-stars">
+                        <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <span class="google-badge-count">(114)</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section class="section about" id="about">
+        <div class="about-grid">
+            <div class="about-image reveal">
+                <div class="about-image-main">
+                    <img src="images/seating-tables.webp" alt="Tiny's café seating area">
+                </div>
+                <!-- Retro Flip Counter -->
+                <div class="flip-counter" id="flipCounter">
+                    <div class="flip-display">
+                        <div class="flip-digit" id="digit1">
+                            <span class="flip-number">0</span>
+                        </div>
+                        <div class="flip-digit" id="digit2">
+                            <span class="flip-number">6</span>
+                        </div>
+                    </div>
+                    <div class="flip-label">Years Strong</div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="section-label reveal">Our Story</div>
+                <h2 class="section-title reveal">Where neighbours become friends</h2>
+                <p class="reveal">Tiny's General Store began with a simple belief: that a neighbourhood deserves a place where quality meets warmth. Tucked away on Barton Ave, we've become part of the community's daily rhythm.</p>
+                <p class="reveal">Every morning brings familiar faces and new discoveries. Whether it's your usual order or something that catches your eye on our shelves, there's always a reason to linger.</p>
+                <div class="about-features reveal">
+                    <div class="about-feature">Locally Roasted</div>
+                    <div class="about-feature">Daily Fresh</div>
+                    <div class="about-feature">Thoughtfully Curated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offerings -->
+    <section class="section offerings" id="offerings">
+        <div class="offerings-header">
+            <div class="section-label reveal">What We Offer</div>
+            <h2 class="section-title reveal">Coffee & Goodies</h2>
+            <p class="section-subtitle reveal">Carefully sourced, lovingly prepared</p>
+        </div>
+        <div class="offerings-grid">
+            <div class="offering-card reveal reveal-delay-1">
+                <div class="offering-card-image">
+                    <img src="images/coffee-pastry.webp" alt="Latte with croissant">
+                    <span class="offering-card-image-tag">Signature</span>
+                </div>
+                <div class="offering-card-content">
+                    <h3>Coffee & Espresso</h3>
+                    <p>Single-origin beans from local roasters. Espresso, pour-over, cold brew, and more.</p>
+                </div>
+            </div>
+            <div class="offering-card reveal reveal-delay-2">
+                <div class="offering-card-image">
+                    <img src="images/coffee-spread.webp" alt="Coffee and pastries spread">
+                    <span class="offering-card-image-tag">Fresh Daily</span>
+                </div>
+                <div class="offering-card-content">
+                    <h3>Pastries & Bakes</h3>
+                    <p>Buttery croissants, seasonal scones, and sweet treats from neighbourhood bakers.</p>
+                </div>
+            </div>
+            <div class="offering-card reveal reveal-delay-3">
+                <div class="offering-card-image">
+                    <img src="images/products-shelves.webp" alt="Curated goods on shelves">
+                    <span class="offering-card-image-tag">Curated</span>
+                </div>
+                <div class="offering-card-content">
+                    <h3>Curious Goods</h3>
+                    <p>Ceramics, candles, pantry staples, and small treasures. Gifts that feel considered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+        <div class="gallery-header">
+            <div class="section-label reveal">The Space</div>
+            <h2 class="section-title reveal">Step Inside</h2>
+            <p class="section-subtitle reveal">A glimpse of your new favourite corner</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal">
+                <img src="images/interior-shop.webp" alt="Interior shop area with products">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="images/menu-board.webp" alt="Retro Coca-Cola menu board">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="images/products-detail.webp" alt="Product shelves detail">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="images/seating-window.webp" alt="Window seating area">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="section testimonial">
+        <div class="testimonial-content">
+            <p class="testimonial-quote reveal">"This little gem is exactly what every neighbourhood needs. The coffee is perfect, the pastries are dangerous, and I always leave happier than I came in."</p>
+            <p class="testimonial-author reveal">— <strong>Sarah M.</strong>, neighbourhood regular</p>
+        </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="section visit" id="visit">
+        <div class="visit-grid">
+            <div class="visit-image reveal">
+                <div class="visit-image-main">
+                    <img src="images/sign-exterior.webp" alt="Tiny's exterior sign">
+                </div>
+                <div class="visit-image-overlay">
+                    <a href="https://maps.app.goo.gl/GhEUQp2WhPD2Xj6g6" target="_blank" class="address">
+                        <strong>80 Barton Ave</strong>
+                        <span>Toronto, ON M6G 1P6 · Side entrance</span>
+                    </a>
+                    <a href="https://maps.app.goo.gl/GhEUQp2WhPD2Xj6g6" target="_blank" class="directions-btn">Get Directions</a>
+                </div>
+            </div>
+            <div class="visit-info">
+                <div class="section-label reveal">Find Us</div>
+                <h2 class="section-title reveal">Come Visit</h2>
+                <div class="visit-hours reveal">
+                    <h3>Hours</h3>
+                    <div class="hours-row">
+                        <span class="day">Monday – Friday</span>
+                        <span class="time">8:00am – 4:30pm</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Saturday – Sunday</span>
+                        <span class="time">9:00am – 4:30pm</span>
+                    </div>
+                </div>
+                <div class="visit-contact reveal">
+                    <a href="tel:416-516-7723" class="visit-contact-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>Call</span>
+                        <p>(416) 516-7723</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/GhEUQp2WhPD2Xj6g6" target="_blank" class="visit-contact-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Location</span>
+                        <p>Side Entrance</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="instagram" id="instagram">
+        <div class="instagram-header">
+            <div class="section-label reveal">Follow Along</div>
+            <h2 class="reveal">@the_tinygeneral</h2>
+            <a href="https://www.instagram.com/the_tinygeneral/" target="_blank" class="link-hover reveal">View on Instagram</a>
+        </div>
+        <div class="instagram-embed reveal">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/the_tinygeneral/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;">
+                    <a href="https://www.instagram.com/the_tinygeneral/" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                        <div style="display: flex; flex-direction: row; align-items: center;">
+                            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                                <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                            </div>
+                        </div>
+                        <div style="padding: 19% 0;"></div>
+                        <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                            <svg width="50px" height="50px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="#000" transform="translate(-511 -20)"><path d="M556.869 30.41c-2.055 0-3.721 1.666-3.721 3.721 0 2.055 1.666 3.721 3.721 3.721 2.055 0 3.721-1.666 3.721-3.721 0-2.055-1.666-3.721-3.721-3.721M541 60.657c-5.886 0-10.658-4.77-10.658-10.657 0-5.886 4.772-10.658 10.658-10.658 5.887 0 10.658 4.772 10.658 10.658 0 5.887-4.771 10.657-10.658 10.657M541 33.886c-8.158 0-16.114 7.956-16.114 16.114 0 8.158 7.956 16.114 16.114 16.114 8.158 0 16.114-7.956 16.114-16.114 0-8.158-7.956-16.114-16.114-16.114"/></g></g></svg>
+                        </div>
+                        <div style="padding-top: 8px;">
+                            <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div>
+                        </div>
+                    </a>
+                </div>
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2 class="reveal">Stay in the Loop</h2>
+            <p class="reveal">New arrivals, seasonal offerings, and neighbourhood happenings.</p>
+            <form class="newsletter-form reveal">
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/logo-footer.svg" alt="Tiny's General Store" class="logo-footer">
+                    <p>A neighbourhood café and curiosity shop in the heart of Toronto. Good coffee, thoughtful goods, and genuine warmth.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/the_tinygeneral/" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://www.yelp.ca/biz/tiny-s-toronto?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.14 11.18L9.24 2.77C9.1 2.36 8.64 2.12 8.23 2.26 7.82 2.4 7.57 2.86 7.71 3.27L10.22 10.73C10.36 11.14 10.82 11.38 11.23 11.24 11.64 11.1 11.89 10.64 11.75 10.23ZM17.21 13.35C17.06 12.95 16.6 12.73 16.2 12.88L13.2 13.98C12.8 14.13 12.58 14.59 12.73 14.99 12.88 15.39 13.34 15.61 13.74 15.46L16.74 14.36C17.14 14.21 17.36 13.75 17.21 13.35ZM12.73 17.01C12.58 16.61 12.12 16.39 11.72 16.54L8.72 17.64C8.32 17.79 8.1 18.25 8.25 18.65 8.4 19.05 8.86 19.27 9.26 19.12L12.26 18.02C12.66 17.87 12.88 17.41 12.73 17.01ZM6.79 13.35C6.64 13.75 6.86 14.21 7.26 14.36L10.26 15.46C10.66 15.61 11.12 15.39 11.27 14.99 11.42 14.59 11.2 14.13 10.8 13.98L7.8 12.88C7.4 12.73 6.94 12.95 6.79 13.35ZM14.76 10.23C14.62 10.64 14.87 11.1 15.27 11.24 15.68 11.38 16.14 11.14 16.28 10.73L18.79 3.27C18.93 2.86 18.68 2.4 18.27 2.26 17.86 2.12 17.4 2.36 17.26 2.77L14.76 10.23Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#visit">Hours & Location</a></li>
+                        <li><a href="tel:416-516-7723">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#offerings">Coffee</a></li>
+                        <li><a href="#offerings">Pastries</a></li>
+                        <li><a href="#offerings">Goods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/the_tinygeneral/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.yelp.ca/biz/tiny-s-toronto" target="_blank">Yelp</a></li>
+                        <li><a href="https://www.google.com/search?q=Tiny's+Toronto" target="_blank">Google Reviews</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Tiny's General Store</p>
+                <p>Website by <a href="https://goodwebsites.ca">Good Websites</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
